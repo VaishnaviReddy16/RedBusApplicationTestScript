@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCase.VerifyBookingBusSeat">
+      <class name="TestCase.VerifyBookingCab">
         <methods>
-          <include name="bookingTSRTCBusSeat" invocation-numbers="0"/>
+          <include name="closeBrwoser"/>
           <include name="browseer"/>
+          <include name="bookingcab"/>
         </methods>
-      </class> <!-- TestCase.VerifyBookingBusSeat -->
+      </class> <!-- TestCase.VerifyBookingCab -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

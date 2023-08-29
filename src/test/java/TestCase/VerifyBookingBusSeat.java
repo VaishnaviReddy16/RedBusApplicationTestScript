@@ -10,9 +10,8 @@ public class VerifyBookingBusSeat extends BaseClass
 	@Test(dataProvider="DriverTesttt")
 	public void bookingTSRTCBusSeat(String Fromcity,String Tocity) 
 	{		
-		HomePage homePageObject = new HomePage(driver);	
-		//homePageObject.searchbus(Fromcity, Tocity);
-	    homePageObject.applyingdepartTimefilters();
+		HomePage homePageObject = new HomePage(driver);
+		homePageObject.searchbus(Fromcity, Tocity);
 		homePageObject.applyingTSRTCfilter();
 		homePageObject.selectingTSRTCbus();
 		homePageObject.selectingdropingBoardingpoints();
